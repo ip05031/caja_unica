@@ -1,0 +1,1 @@
+INSERT INTO `caja_unica`.`tipo_gasto` (`id_tipo_gasto`, `nombre_gasto`, `tipo_gasto`) VALUES (NULL, 'Mantenimiento de Ruta', 'Gasto_Salario'), (NULL, 'Sancion', 'Gasto_Salario');

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MOVISAL S.A. de C.V. </title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.7 -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+	<!-- daterange picker -->
+	<link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+	<!-- bootstrap datepicker -->
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<!-- iCheck for checkboxes and radio inputs -->
+	<link rel="stylesheet" href="plugins/iCheck/all.css">
+	<!-- Bootstrap Color Picker -->
+	<link rel="stylesheet" href="bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+	<!-- Bootstrap time Picker -->
+	<link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
+	<!-- Select2 -->
+	<link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+	folder instead of downloading all of them to reduce the load. -->
+	<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+<link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="dist/img//favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="dist/img//favicon-16x16.png">
+
+<style type="text/css" >
+	.no_input{
+		background:#F2F2F2;
+		text-align:center;
+		cursor: not-allowed;
+	}
+</style>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Google Font -->
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>M</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Movisal</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+    </nav>
+  </header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+		<!-- Sidebar user panel -->
+		<div class="user-panel">
+			<div class="pull-left image">
+				<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+			</div>
+			<div class="pull-left info">
+				<p>Alexander Pierce</p>
+				<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+			</div>
+		</div>
+		<!-- search form -->
+		<form action="#" method="get" class="sidebar-form">
+			<div class="input-group">
+				<input type="text" name="q" class="form-control" placeholder="Search...">
+				<span class="input-group-btn">
+					<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+					</button>
+				</span>
+			</div>
+		</form>
+		<!-- /.search form -->
+		<!-- sidebar menu: : style can be found in sidebar.less -->
+		<ul class="sidebar-menu" data-widget="tree">
+			<li class="header">MAIN NAVIGATION</li>
+
+
+
+	        <li class="active treeview">
+	          <a href="#">
+	            <i class="fa fa-edit"></i> <span>Registro</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li class="active"><a href="Boleta.html"><i class="fa fa-circle-o"></i> Registro de Boleta</a></li>
+	            <li><a href="Gastos.html"><i class="fa fa-circle-o"></i> Gastos</a></li>
+	            <li><a href="Motoristas.html"><i class="fa fa-circle-o"></i> Motoristas - Unidades</a></li>
+	          </ul>
+	        </li>
+
+
+	        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-calendar"></i> <span>Reportes</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li class=""><a href="Reporte_1.html"><i class="fa fa-circle-o"></i> Reporte Diario</a></li>
+	            <li><a href="Reporte_2.html"><i class="fa fa-circle-o"></i> Reporte Semanal</a></li>
+	            <li><a href="Reporte_3.html"><i class="fa fa-circle-o"></i> Reporte Mensual</a></li>
+	          </ul>
+	        </li>
+
+	        <li class=" treeview">
+	          <a href="#">
+	            <i class="fa fa-edit"></i> <span>Usuario</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li class=""><a href="Usuario.html"><i class="fa fa-circle-o"></i> Datos Usuario </a></li>
+	            <li><a href="nuevo_usuario.html"><i class="fa fa-circle-o"></i> Nuevo Usuario </a></li>
+	          </ul>
+	        </li>
+
+		</ul>
+</section>
+<!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<section class="content-header">
+		<h1>
+			Boleta
+		</h1>
+	</section>
+
+	<!-- Main content -->
+	<section class="content">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> 
+				<div class="box box-success">
+		            <div class="box-header with-border">
+		              <h3 class="box-title"> Ingreso </h3>
+
+		              <div class="box-tools pull-right">
+		                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+		                </button>
+		              </div>
+		              <!-- /.box-tools -->
+		            </div>
+		            <!-- /.box-header -->
+		            <div class="box-body" style="">
+		              	<div class="table-responsive">
+							<table class="table table-hover table-bordered table-striped">
+								<tbody>
+									<tr>
+										<td> Selecciona un Motorista </td>
+										<td><select class="form-control select2 motoristas" style="width: 100%;"> </select> </td>
+									</tr>
+									<tr>
+										<td> Unidad Asociada al motorista </td>
+										<td> <div style="width: 100%;" class="form-control no_input" id="unidad"> </div> </td>
+									</tr>
+									<tr>
+										<td> Placa equipo</td>
+										<td> <div style="width: 100%;" class="form-control no_input" id="placa"> </div> </td>
+									</tr>
+									<tr>
+										<td> Inicio </td>
+										<td> <div style="width: 100%;" class="form-control no_input" id="inicio"> </div> </td>
+									</tr>
+									<tr>
+										<td> Final </td>
+										<td>  <input type="number" id="final" name="final" class="form-control" ">  </td>
+									</tr>
+									<tr>
+										<td> Vueltas </td>
+										<td> <div style="width: 100%;" class="form-control no_input" id="vueltas"> </div> </td>
+									</tr>
+									<tr>
+										<td> Viajes </td>
+										<td> <input type="number" id="viajes" name="viajes" class="form-control" ">  </td>
+									</tr>
+									<tr>
+										<td> Precio </td>
+										<td> <div style="width: 100%;" class="form-control no_input" id="precio">  $0.20  </div> </td>
+									</tr>
+									<tr style="color:#3c8dbc; font-size: 15px; font-weight: bold;border:1px solid blue;" >
+										<td> Ingreso </td>
+										<td><div style="width: 100%;border:1px solid blue;" class="form-control no_input" id="ingreso"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+		            </div>
+		            <!-- /.box-body -->
+		        </div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> 
+				<div class="box box-danger">
+		            <div class="box-header with-border">
+		              <h3 class="box-title"> Gastos </h3>
+
+		              <div class="box-tools pull-right">
+		                <button type="button" class="btn btn-box-tool" id="refresh_gastos"><i class="fa fa-refresh"></i> </button>
+		                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i> </button>
+		              </div>
+		              <!-- /.box-tools -->
+		            </div>
+		            <!-- /.box-header -->
+		            <div class="box-body" style="">
+		              	<div class="table-responsive">
+							<table class="table table-hover table-bordered table-striped " id="tbl_gastos">
+								<tbody class="lst_gastos">
+								</ tbody>
+							</table>
+						</div>
+		            </div>
+		            <!-- /.box-body -->
+		        </div>
+			</div>			
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> 
+				<div class="box box-success">
+		            <div class="box-header with-border">
+		              <h3 class="box-title"> Datos de boleta </h3>
+		              <div class="box-tools pull-right">
+		                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+		                </button>
+		              </div>
+		              <!-- /.box-tools -->
+		            </div>
+		            <!-- /.box-header -->
+		            <div class="box-body" style="">
+		              				<div class="table-responsive">
+							<table class="table table-hover table-bordered table-striped">
+								<tbody>
+									<tr>
+										<td> Ingreso </td>
+										<td> <div style="width: 100%;" class="form-control no_input " id="ingreso_total"> </div> </td>
+									</tr>
+									<tr>
+										<td> Total Gastos </td>
+										<td> <div style="width: 100%;" class="form-control no_input " id="gasto_total"> </div> </td>
+									</tr>
+									<tr>
+										<td> Liquido Entregado  </td>
+										<td> <div style="width: 100%;" class="form-control no_input " id="liquido_ingresado"> </div> </td>
+									</tr>
+									<tr>
+										<td> Neto Empresario </td>
+										<td> <div style="width: 100%;" class="form-control no_input " id="neto_empresario"> </div>  </td>
+									</tr>
+									<tr>
+										<td colspan="2"> <button type="button" class="btn btn-success" id="imprimir_boleta">Imprimir Boleta</button> </td> 
+									</tr>
+								</tbody>
+							</table>
+						</div>
+		            </div>
+		            <!-- /.box-body -->
+		        </div>
+			</div>
+		</div>
+	</section>
+	<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+	<div class="pull-right hidden-xs">
+		<b>Version</b> 2.4.0
+	</div>
+	<strong>Copyright &copy; 2018</strong>
+</footer>
+
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+	immediately after the control sidebar -->
+	<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page script -->
+<script>
+	$(function () {
+//Initialize Select2 Elements
+
+
+//Datemask dd/mm/yyyy
+$('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+//Datemask2 mm/dd/yyyy
+$('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+//Money Euro
+$('[data-mask]').inputmask()
+
+//Date range picker
+$('#reservation').daterangepicker()
+//Date range picker with time picker
+$('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+//Date range as a button
+$('#daterange-btn').daterangepicker(
+{
+	ranges   : {
+		'Today'       : [moment(), moment()],
+		'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+		'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+		'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+		'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+		'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	},
+	startDate: moment().subtract(29, 'days'),
+	endDate  : moment()
+},
+function (start, end) {
+	$('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+}
+)
+
+//Date picker
+$('#datepicker').datepicker({
+	autoclose: true
+})
+
+//iCheck for checkbox and radio inputs
+$('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+	checkboxClass: 'icheckbox_minimal-blue',
+	radioClass   : 'iradio_minimal-blue'
+})
+//Red color scheme for iCheck
+$('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+	checkboxClass: 'icheckbox_minimal-red',
+	radioClass   : 'iradio_minimal-red'
+})
+//Flat red color scheme for iCheck
+$('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+	checkboxClass: 'icheckbox_flat-green',
+	radioClass   : 'iradio_flat-green'
+})
+
+//Colorpicker
+$('.my-colorpicker1').colorpicker()
+//color picker with addon
+$('.my-colorpicker2').colorpicker()
+
+//Timepicker
+$('.timepicker').timepicker({
+	showInputs: false
+})
+})
+</script>
+<script src="dist/js/funciones.js"></script>
+<script  type="text/javascript">
+	$(document).ready(function() {
+
+		fecha();
+		hora();
+		cargar_motoristas();
+		cargar_gastos();
+		$(".motoristas").on('change', function(event) {
+			event.preventDefault();
+			var id = $(this).val();
+			cargar_info_motorista(id);
+		});
+		$('.select2').select2();
+
+		$("#final").on('change', function(event) {
+			calcular_ingreso_nuevo();
+		});
+
+		$("#imprimir_boleta").on('click', function(event) {
+			guardar_boleta();
+		});
+		$("#refresh_gastos").on('click', function(event) {
+			cargar_gastos();
+		});
+
+		
+	});
+
+
+
+</script>
+
+
+</body>
+</html>
+
+

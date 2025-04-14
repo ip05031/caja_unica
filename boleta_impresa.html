@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<div style="width:750px !important;">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="table-responsive">
+				<table class="table-hover" style="margin:0 auto;">
+					<tbody>
+						<tr>
+							<td style="text-align:center;" colspan="4" >RUTA 44 CAJA UNICA</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;" colspan="4">
+								<span style="float:left;"> 12:00am </span> 
+								<span style="float:center;" > INGRESOS DIARIOS EN US DOLARES </span>
+								<span style="float:right;"> 12/12/2017 </span>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;width: 20%;" >Autobus</td>
+							<td style="text-align:center;width: 20%;" >ab-81262</td>
+							<td style="text-align:center;width: 20%;" >Equipo</td>
+							<td style="text-align:center;width: 20%;" >26</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;" >Propietario</td>
+							<td style="text-align:center;" >12</td>
+							<td style="text-align:center;" colspan="2"> MOVISAL S.A. de C.V.  </td>
+						</tr>				
+						<tr>
+							<td style="text-align:center;" >Conductor</td>
+							<td style="text-align:center;" >237</td>
+							<td style="text-align:center;" colspan="2"> JOSE ARMANDO GUILLEN RIVERA  </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr style="margin: 10 auto;border:1px solid blue;">
+	<div class="row" style="margin: 0 auto;">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border-right:1px solid #00a65a;">
+			<h3 style="color:#3c8dbc;"> 
+				Ingresos
+			</h3>
+				<table class="table-hover" style="width:100%;">
+					<tbody>
+						<tr>
+							<td> Número Inicial</td>
+							<td style="text-align:right;"> <span id="txt_inicio"> 000000 </span> </td>
+						</tr>                    
+						<tr>
+							<td> Número Final</td>
+							<td style="text-align:right;"> <span id="txt_final" > 000000 </span> </td>
+						</tr>                    
+						<tr>
+							<td> Vueltas </td>
+							<td style="text-align:right;" > <span id="txt_vueltas" > 000 </span> </td>
+						</tr>
+						<tr>
+							<td> Viajes </td>
+							<td style="text-align:right;" > <span id="txt_viajes" > 00 </span>  </td>
+						</tr>                  
+						<tr>
+							<td> &nbsp; </td>
+							<td> &nbsp; </td>
+						</tr>
+						<tr>
+							<td> &nbsp; </td>
+							<td> &nbsp; </td>
+						</tr>
+						<tr style="color:#3c8dbc;font-weight: bold;">
+							<td> Ingreso </td>
+							<td style="text-align:right;"> <span id="txt_ingreso" style="text-align:right;"> $000.00 </span> </td>
+						</tr>
+					</tbody>
+				</table>
+			<div class="pull-right">
+				
+			</div>
+		</div>
+
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border-right:1px solid #00a65a;">
+			<h3 style="color:#3c8dbc;"> 
+				Gastos
+			</h3>
+				<table class="table-hover" style="width:100%;">
+					<tbody>
+						<tr>
+							<td> Administración: </td>
+							<td style="text-align:right;">
+								<span id="txt_admin"> $000.00 </span> 
+							</td>
+						</tr>                    
+						<tr>
+							<td> Mantenimiento Ruta:</td>
+							<td style="text-align:right;">
+								<span id="txt_mtto"> $000.00 </span> 
+							</td>
+						</tr>                    
+						<tr>
+							<td> Sueldos </td>
+							<td style="text-align:right;"> 
+								<span id="txt_sueldo"> $000.00 </span> 
+							</td>
+						</tr>
+						<tr>
+							<td> Administracion extra </td>
+							<td style="text-align:right;"> 
+								<span id="txt_admon_extra"> $000.00 </span>
+							</td>
+						</tr>                  
+						<tr>
+							<td> Diesel </td>
+							<td style="text-align:right;"> 
+								<span id="txt_diesel"> $000.00 </span>
+							</td>
+						</tr>                  
+						<tr>
+							<td> Sanción </td>
+							<td style="text-align:right;"> $00.00</td>
+						</tr>  
+						<tr style="color:#3c8dbc;font-weight: bold;">
+							<td > Suma de Gastos </td>
+							<td style="text-align:right;"> $000.00</td>
+						</tr>
+
+					</tbody>
+				</table>
+		</div>
+
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h3 style="color:#3c8dbc;"> 
+				&nbsp;
+			</h3>
+				<table class="table-hover" style="width:100%;">
+					<tbody>
+						<tr>
+							<td style="width:60%;"> Total Ingresos: </td>
+							<td style="text-align:right;">
+								<span id="txt_total_ingreso"> $000.00 </span>
+							</td>
+						</tr>                    
+						<tr>
+							<td>Total Gastos:</td>
+							<td style="text-align:right;">
+								<span id="txt_total_gastos"> $000.00 </span>
+							</td>
+						</tr>                    
+						<tr>
+							<td>Liquido Entregado:</td>
+							<td style="text-align:right;">
+								<span id="txt_liquido_entregado"> $000.00 </span>
+							</td>
+						</tr>                    
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>						
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>						
+						<tr style="color:#00a65a;font-weight:bold;">
+							<td>Neto Empresario:</td>
+							<td style="text-align:right;"> $000.00 </td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+
+
+
+
+	</div>
+
+</div>
+
+</body>
+</html>
